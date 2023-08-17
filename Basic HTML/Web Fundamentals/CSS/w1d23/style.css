@@ -1,0 +1,66 @@
+*{
+    background-color:white;
+    margin:0px;
+    padding:0px;
+}
+
+/* h1{
+    color:powderblue;
+    background-color:black;
+    margin:20px 15px;
+    padding:20px;
+} */
+
+.container{
+    width:80%;
+    margin: 0 auto;
+}
+
+
+/* .bold{
+    font-weight: bold;
+
+} */
+
+.row{
+    border: 2px solid green;
+    height: 800px;
+    display:flex;
+    justify-content:space-around;
+    align-items: center;
+    /* gap:20px; */
+    flex-direction: column-reverse;
+
+}
+
+
+.red,.blue,.green{
+    font-weight: bold;
+    font-size: larger;
+    width:200px;
+    height:200px;
+    /* display: inline-block;
+    vertical-align: top; */
+}
+
+.red{
+    background-color: red;
+}
+
+.blue{
+    background-color: blue;
+}
+
+.green{
+    background-color: green;
+}
+
+/* .yellow{
+    background-color: yellow;
+    width:100px;
+    height:100px;
+    display: inline-block;
+} */
+
+/* inline
+blockquoteinline-block*/

@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+	<meta charset="UTF-8" />
+	<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+	<title>Registration form by Kyle Talley</title>
+</head>
+
+<body>
+	<h1>Registration Form</h1>
+
+</body>
+<form action="/process" method="post">
+	<div>
+		<label> Name: *</label>
+		<input type="text" name="name" placeholder="Enter your name here...">
+	</div>
+	<div>
+		<label>Email: *</label>
+		<input type="text" name="email" placeholder="Enter your email here...">
+	</div>
+	<div>
+		<p></p>
+		<label>Date of birth: </label>
+		<input type="date" name="Birthday" placeholder="mm/dd/yyyy">
+	</div>
+	<div>
+		<p></p>
+		<Label>Gender identification: </Label>
+		<p></p>
+		<input type="radio" name="Gender" value="m" id="m">
+		<label for="Male">Male</label>
+		<input type="radio" name="Gender" value="f" id="f">
+		<label for="Female">Female</label>
+		<input type="radio" name="Gender" value="nb" id="nb">
+		<label for="Non-binary">Non-binary</label>
+		<input type="radio" name="Gender" value="pnts" id="pnts">
+		<label for="pnts">Prefer not to say</label>
+		<p></p>
+	</div>
+	<div>
+		<label>Password: *</label>
+		<input type="password" name="password">
+	</div>
+	<div>
+		<p></p>
+		<label>Confirm password: *</label>
+		<input type="password" name="passwordConfirm">
+		<p></p>
+	</div>
+	<label>Tell us a bit about yourself! </label>
+	<p></p>
+	<textarea name="comment" cols="21" rows="3">
+		</textarea>
+	</div>
+	<div>
+		<p></p>
+		<label>What is your favorite brand of laptop?</label>
+		<select name="What is your favorite laptop?">
+			<option value="Apple">Apple</option>
+			<option value="Dell">Dell</option>
+			<option value="HP">HP</option>
+			<option value="Lenovo">Lenovo</option>
+			<option value="Microsoft">Microsoft</option>
+			<option value="Alienware">Alienware</option>
+			<option value="MSI">MSI</option>
+		</select>
+	</div>
+	<div>
+		<p></p>
+		<input type="checkbox" name="offers" id="offers" checked>
+		<label for="offers">Would you like to receive daily offers?</label>
+	</div>
+	<p></p>
+	<div>
+		<input type="submit" value="Submit Registration">
+	</div>
+</form>
+<p></p>
+<p>*Indicates a required field</p>
+
+</html>

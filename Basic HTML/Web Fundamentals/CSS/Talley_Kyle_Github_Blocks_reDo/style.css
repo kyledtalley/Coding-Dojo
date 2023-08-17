@@ -1,0 +1,40 @@
+*{
+    font-family: sans-serif;
+}
+
+
+.container{
+    width:800px;
+    margin: 0 auto;
+    background-color: rgb(240, 240, 240);
+    padding: 20px;
+    text-align: center;
+}
+
+h1{
+    text-align: center;
+    margin-top: 0;
+    margin-bottom: 20px;
+}
+
+img.octocat{
+    height: 200px;
+}
+
+.row{
+    display: flex;
+    justify-content: space-between;
+    background-color: white;
+    margin: 20px;
+    padding: 20px;
+}
+
+.pink{
+    background-color: lightpink;
+    justify-content: space-evenly;
+}
+
+.blue{
+    background-color: lightblue;
+}
+

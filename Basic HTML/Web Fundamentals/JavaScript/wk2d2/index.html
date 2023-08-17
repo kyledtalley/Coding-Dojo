@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="script.js" defer></script>
+</head>
+<body>
+
+</body>
+</html>
+
+<body>
+    <div class="container">
+        <div class="nav-bar">
+            <h1 onclick="alert('I have been clicked!')">Click Me</h1>
+            <form action="#" onsubmit="changeColor(event)">
+                <input type="text" placeholder="Search">
+            </form>
+            <button onclick="inOrOut(this)">Login</button>
+        </div>
+        <div class="main">
+            <h3 onmouseover="enter()" onmouseout="leave()">Hover over me for a surprise!</h3>
+            <div class="addOns">
+                <p >Add On <span id="addOnOne">1</span></p>
+                <button onclick="addOne('addOnOne')">Add</button>
+                <p>Add On <span id="addOnTwo">1</span></p>
+                <button onclick="addOne('addOnTwo')">Add</button>
+                <p>Add On <span id="addOnThree">1</span></p>
+                <button onclick="addOne('addOnThree')">Add</button>
+            </div>
+            <img src="./img/Screenshot 2023-08-01 131410.png" alt="snailed it">
+        </div>
+    </div>
+</body>
+
+</html>

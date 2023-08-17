@@ -1,0 +1,24 @@
+body{
+    font-family: monospace;
+}
+
+h1{
+    text-align: left;
+    background-color: black;
+    color:white;
+}
+
+h2{
+    text-align: center;
+    background-color: rebeccapurple;
+    font-style: italic;
+    color:white;
+}
+
+h3{
+    text-align: right;
+    background-color: deepskyblue;
+    color:black;
+    text-decoration: underline;
+
+}

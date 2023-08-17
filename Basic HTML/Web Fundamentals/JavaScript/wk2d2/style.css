@@ -1,0 +1,22 @@
+*{
+    margin:0px;
+    padding:0px;
+}
+
+.container{
+    width: 80%;
+    margin: 0 auto;
+}
+
+.nav-bar{
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    background-color: black;
+    color: white;
+    height: 50px;
+}
+
+img{
+    display: none;
+}

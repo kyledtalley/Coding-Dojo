@@ -1,0 +1,276 @@
+* {
+    vertical-align: baseline;
+    font-weight: inherit;
+    font-family: inherit;
+    font-style: inherit;
+    font-size: 100%;
+    border: 0 none;
+    outline: 0;
+    padding: 0;
+    margin: 0;
+}
+
+body {
+    background-color: #f3f3f3;
+    font-family: cursive;
+}
+.main{
+    display:flex;
+    justify-content: center;
+}
+
+
+.nav{
+    background-color: #333333;
+    color: #ffffff;
+    height: 80px;
+    width: auto;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+
+.nav-links{
+    width: 50%;
+    display: flex;
+    align-items: center;
+    list-style-type: none;
+    justify-content: space-around;
+
+
+}
+
+.nav-links a{
+    font-size: 15px;
+    color: #ffffff;
+    text-decoration: none;
+}
+
+.nav-title{
+    font-size: 40px;
+    margin-left: 20px;
+}
+
+.btn{
+    height: 35px;
+    width: 100px;
+    background-color: #17a2b8;
+    color: #ffffff;
+    border: none;
+    font-size: 16px;
+    box-shadow: 5px 5px #000000;
+}
+
+.container {
+
+    width: 750px;
+    display: flex;
+    align-items: flex-start;
+}
+
+.user-card {
+    width: 100%;
+    background-color: #fff;
+    border: 2px solid #999;
+    margin-bottom: 20px;
+    border-radius: 5px;
+    font-size: 1.2rem;
+    overflow: hidden;
+}
+
+.card-header {
+    background-color: #17a2b8;
+    height: 125px;
+    margin-bottom: 70px;
+}
+
+.card-body {
+    padding: 20px;
+}
+
+.card-body h1,
+.card-body h2,
+.card-body h3,
+.card-body p {
+    margin: 20px 0px;
+}
+
+.leftSide{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    margin: 100px 50px;
+}
+
+.education{
+    width: 100%;
+    background-color: #fff;
+    border: 2px solid #999;
+    margin-bottom: 20px;
+    border-radius: 5px;
+    font-size: 1.2rem;
+
+}
+
+.education .body{
+    margin: 17px;
+}
+.education h1{
+    background-color: #17a2b8;
+    font-size: 23px;
+}
+.education h2{
+    font-size: 19px;
+    text-decoration: underline;
+}
+.education h3{
+    font-size: 17px;
+    color: grey
+}
+
+.education p{
+    font-size: 17px;
+}
+
+.containerTwo{
+    margin: 100px 0px 25px 0px;
+    height: auto;
+}
+
+.albert{
+    display: flex;
+    flex-direction: row;
+    margin-top: 10px;
+    justify-content: space-evenly;
+}
+
+.ada{
+    display: flex;
+    flex-direction: row;
+    margin-top: 10px;
+    justify-content: space-evenly;
+
+}
+.smallUser, p{
+    display:flex;
+}
+
+.albert .friend,
+.ada .friend{
+    display: flex;
+
+}
+
+
+.smallUser{
+    border: 2px dotted black;
+    border-radius: 30px;
+    height: 30px;
+    font-size: 30px;
+}
+.albert img,
+.ada img{
+    height: 30px;
+    font-size: 30px;
+}
+
+
+
+.friend{
+    height: 15px;
+    font-size: 15px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: flex-start;
+}
+
+
+.sideContainer{
+    display: flex;
+    flex: 1;
+    flex-direction: column;
+    width: 250px;
+
+
+}
+
+
+.sideContainerTwo{
+    display: flex;
+    flex: 2;
+    flex-direction: column;
+    width: 250px;
+    border: 2px solid #999;
+    margin: auto 0px;
+    border-radius: 5px;
+
+    font-size: 20px
+}
+
+.yourConnections div{
+    margin-top:15px;
+    display: flex;
+    justify-content: space-around;
+
+}
+
+.bothSideContainers{
+    width: 250px;
+    height: auto;
+
+}
+
+.sideContainer{
+
+    flex: 1;
+    border: 2px solid #999;
+    border-radius: 5px;
+}
+
+.sideContainer .title h3,
+.sideContainerTwo .title h3{
+    background-color: #17a2b8;
+
+}
+
+.yourConnections img{
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+}
+
+
+.userBubble {
+    border-radius: 50%;
+    background-color: #fff;
+    height: 190px;
+    padding: 5px;
+    margin-top: 20px;
+    margin-left: 20px;
+}
+
+.viewMore{
+    margin-top: 20px;
+    border: 1px solid #999;
+    font-size: 15px;
+    display: flex;
+    justify-content: center;
+}
+
+
+
+.icon {
+
+    height: 20px;
+}
+
+a{
+    text-decoration: none;
+}
+a:hover {
+    color: #3a81e6;
+    text-decoration: underline;
+}
+

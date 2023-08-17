@@ -1,0 +1,184 @@
+/*opted for adding to the like counter over the alert that the definition had been liked.
+I felt it was more of a realistic approach for modern day applications.
+I did try to add both a ++ to the like count and an alert, but I didn't know how to do both,
+so I chose just the like count*/
+
+
+.main {
+    display: flex;
+    width: 70%;
+    margin: 0 15%;
+    font-family: cursive;
+    flex-direction: column;
+}
+
+.navBar{
+    background-color: hsl(0deg 0% 80%);
+    width: 100%;
+}
+
+.alignment{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.title{
+    margin-left: 5%;
+    width: auto;
+    display: flex;
+    justify-content: flex-start;
+}
+.search{
+    border: 1px solid black;
+    display: flex;
+    width:auto;
+    justify-content:flex-start;
+}
+
+.loginBtn button {
+    font-weight: bold;
+    margin-right: 5%;
+    display: inline-block;
+    padding: 0px 15px;
+    font-size: 14px;
+    cursor: pointer;
+    text-align: center;
+    color: #fff;
+    background-color: hsl(215.03deg 77.41% 53.14%);
+    box-shadow: 0 3px hsl(216, 73%, 75%);
+    border: 2px solid black;
+    box-shadow: 3px 3px #000000;
+}
+
+
+    .loginBtn button:hover {background-color: hsl(215, 40%, 50%)}
+
+    .loginBtn button:active {
+    background-color: hsl(215, 40%, 50%);
+    box-shadow: 5px 5px #000000;
+    transform:translateY(1px);
+}
+
+.bigContainer{
+    display: flex;
+
+}
+.leftContainer{
+    display: flex;
+    width: 60%;
+    flex-direction: column;
+    margin-top: 5%;
+}
+
+.ninjaTopContainer{
+
+    display: flex;
+    flex-direction: row;
+    margin-bottom: 5%;
+}
+.topDef{
+    display: flex;
+    border: 2px solid black;
+    width: 100%;
+}
+
+.wordsAndStuff{
+    margin-left: 5%;
+
+}
+.definition{
+    margin: 7%;
+    width: 60%;
+    display: flex;
+    align-items: center;;
+
+}
+
+.ninjaBottomContainer{
+    display: flex;
+    flex-direction: row;
+}
+.botDef{
+        display: flex;
+        width: 100%;
+        border: 2px solid black;
+}
+
+.rightContainer{
+    display: flex;
+    border: 2px solid black;
+    width: 40%;
+    height: 25%;
+    margin-left: 5%;
+    margin-top: 5%;
+}
+
+.rightContainer > .text {
+    margin: 10%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.likeBtn {
+        color:#000000;
+        display: flex;
+        font-weight: bold;
+        margin-right: 5%;
+        display: inline-block;
+        padding: 0px 15px;
+        font-size: 12px;
+        cursor: pointer;
+        text-align: center;
+        background-color: hsl(45.1deg 100% 70%);
+        border-radius: 0px;
+        border: 2px solid black;
+        box-shadow: 1px 3px #000000;
+    }
+.likeBtn button{
+    color:#000000;
+    display: flex;
+    font-weight: bold;
+    margin-right: 5%;
+    display: inline-block;
+    padding: 0px 15px;
+    font-size: 12px;
+    cursor: pointer;
+    text-align: center;
+    background-color: hsl(45.1deg 100% 70%);
+    border-radius: 0px;
+    border: 2px solid black;
+    box-shadow: 1px 3px #000000;
+}
+    .likeBtn:hover {background-color: hsl(0deg 0% 0% / 52%)}
+
+    .likeBtn:active {
+    box-shadow: 5px 5px #000000;
+    transform:translateY(1px);
+}
+
+
+.defBtn button {
+    width: 100%;
+    color:#000000;
+    display: flex;
+    font-weight: bold;
+    margin-right: 5%;
+    display: inline-block;
+    padding: 5px 15px;
+    font-size: 14px;
+    cursor: pointer;
+    text-align: center;
+    background-color: hsl(101.41deg 37.57% 62.94%);
+    border-radius: 0px;
+    border: 2px solid black;
+    box-shadow: 1px 3px #000000;
+}
+
+.defBtn:hover {background-color: hsl(0deg 0% 0% / 52%)}
+
+.defBtn:active {
+box-shadow: 5px 5px #000000;
+transform:translateY(1px);
+}

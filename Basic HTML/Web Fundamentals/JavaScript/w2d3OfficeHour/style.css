@@ -1,0 +1,131 @@
+*{
+    margin: 0px;
+    padding: 0px;
+    font-family: cursive;
+}
+
+.nav h1{
+    font-size: 100%;
+}
+
+.nav{
+    border: 2px solid black;
+
+    justify-content: space-between;
+    background-color: cyan;
+    padding: 15
+}
+
+
+.nav, .nav-right{
+    border: 2px solid black;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+
+}
+.nav h1{
+    width: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.main{
+    border-bottom: 2px solid black;
+}
+.nav-right{
+    display: flex;
+    width: 50%;
+    justify-content: space-between;
+}
+ul{
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}
+
+li{
+    list-style: none;
+    border-right: 1px solid black;
+    padding-right: 10px;
+}
+li:nth-child(4), li:last-child{
+    border: none;
+}
+
+.content{
+    width: 60%;
+    margin: 0px auto;
+    border: 2px solid black;
+    padding: 15px;
+}
+
+.icon{
+    width: 25px;
+}
+
+.scarlet{
+    width: 100%;
+}
+.scarletBtn{
+    margin: 7px 0px;
+}
+button{
+    background-color: green;
+    padding: 5px;
+    color: white;
+    box-shadow: 3px 6px 5px -4px black;
+
+}
+.sub-content{
+    font-size: 80%;
+}
+h3{
+    margin-top: 10px;
+}
+
+.products{
+    display: flex;
+    justify-content: space-between;
+}
+
+.sword{
+    display: flex;
+    text-align: center;
+    width: 15%;
+    border: 2px solid black;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-evenly;
+}
+
+.footer{
+    background-color: blue;
+    color: white;
+    border: 2px solid black;
+}
+
+
+.popup{
+    width: 200px;
+    text-align: center;
+    border: 1px solid black;
+    border-radius: 20px;
+    margin: 0px auto;
+    background-color: grey;
+    display: none;
+}
+.popUpBtn{
+    background-color: grey;
+    border: none;
+    box-shadow: none;
+}
+
+.popup p{
+    border-bottom: 1px solid black;
+}
+
+.border{
+    border-right: 1px solid black;
+    padding-right: 20px;
+}

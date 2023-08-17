@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" type="text/css" href="style.css">
+    <script src="./script.js" defer></script>
+
+
+
+</head>
+<body>
+    <div class="main">
+        <div class="navBar">
+            <div class="alignment">
+                <div class="title">
+                    <h1>Dojonary</h1>
+                </div>
+
+                <div class="search">
+                    <input type="text" placeholder="Search.." size="40%"">
+                </div>
+
+                <div class=" loginBtn">
+                    <button onclick="inOrOut(this)">Login</button>
+                </div>
+            </div>
+
+        </div>
+
+        <div class="bigContainer">
+            <div class="leftContainer">
+                <div class="ninjaTopContainer">
+                    <div class="topDef">
+                        <div class="wordsAndStuff">
+                            <h1>ninja</h1>
+                            <h6>noun</h6>
+                            <p>Plural: ninjas</p>
+                            <div class="likeBtn">
+                                <p><span id="addOne">13</span> likes</p>
+                                <button onclick="addOne('addOne')">Like!</button>
+
+                            </div>
+                        </div>
+                        <div class="definition">
+                            <p>A practitioner skilled in the Japanese art of ninjutsu</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="ninjaBottomContainer">
+                    <div class="botDef">
+                        <div class="wordsAndStuff">
+                            <h1>ninja</h1>
+                            <h6>noun</h6>
+                            <p>Plural: ninjas</p>
+                            <div class="likeBtn">
+                                <p><span id="likesTwo">37</span> likes</p>
+                                <button onclick="addOne('likesTwo')">Like!</button>
+                            </div>
+                        </div>
+                        <div class="definition">
+                            <p>A programmer who breaks down problems with zen-like focus</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="rightContainer">
+                <div class="text">
+                    <h2>Dojonary is defined by YOU</h2>
+                    <div class="defBtn">
+                        <button onclick="deathToBtn(this)">Add Definition!</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+
+
+</body>
+
+</html>

@@ -1,0 +1,215 @@
+* {
+    vertical-align: baseline;
+    font-weight: inherit;
+    font-family: inherit;
+    font-style: inherit;
+    font-size: 100%;
+    border: 0 none;
+    outline: 0;
+    padding: 0;
+    margin: 0;
+}
+
+
+
+.main{
+    width: 100%;
+    font-family: Comic Sans MS, Comic Sans, cursive;
+    display: flex;
+    flex-direction: column;
+}
+.navBar{
+    background-color:#119b9d;
+    border: 2px solid black;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+
+.navDimensions{
+    display: flex;
+    flex-direction: column;
+    width: 80%;
+}
+
+.topRowNav{
+    font-weight: bold;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-content: center;
+}
+.titleHeader{
+    color: white;
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    align-items: center;
+    font-size: 45px;
+    height: 150px;
+}
+.separateTop{
+    font-size: 25px;
+    display: flex;
+    width: 40%;
+    justify-content: space-around;
+    align-items: center;
+
+}
+
+.bottomNav{
+    color: white;
+    font-size: 17px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    margin: 10px;
+
+}
+
+.lookingFor{
+    display: flex;
+    flex-direction: column;
+}
+.bottomNav img{
+    width: 35px;
+}
+
+
+.location{
+    font-size: 20px;
+    display: flex;
+    flex-direction: column;
+}
+
+.bottomInfo{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+
+
+.containerPets img{
+    width: 200px;
+    margin: 15px;
+    border-radius: 25px;
+}
+.containerPets{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+}
+.pepper{
+    border-radius: 25px;
+    background-color: #eeeeee;
+    display: flex;
+    flex-direction: row;
+    margin: 15px;
+    align-items: center;
+
+}
+
+.bruce{
+    border-radius: 25px;
+    background-color: #eeeeee;
+    display: flex;
+    flex-direction: row;
+    margin: 15px;
+    align-items: center;
+
+}
+
+.oscar{
+    border-radius: 25px;
+    background-color: #eeeeee;
+    display: flex;
+    flex-direction: row;
+    margin: 15px;
+    align-items: center;
+}
+
+.petThePet button{
+    margin: 15px;
+}
+.navDimensions button{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    height: 50px;
+    width: auto;
+
+}
+
+
+.pupperDesc{
+    font-weight: bold;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    font-size: 20px;
+    font-family: cursive;
+    width: 450px;
+}
+
+.pupperDesc h2{
+    font-size: 35px;
+    font-weight: bold;
+}
+
+.bottomNav button{
+    color: white;
+    font-size: 20px;
+    border: 3px solid black;
+    background-color: #9900ff;
+}
+
+.topRowNav button{
+    border-radius: 25px;
+    color: #9900ff;
+    border: 10px dotted yellow;
+    font-size: 20px;
+    background-color: white;
+}
+
+
+
+.topRowNav a{
+    text-decoration: none;
+    color: black;
+}
+
+.topRowNav a:hover{
+    text-decoration: underline;
+}
+
+.petThePet{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+button{
+    font-family: Comic Sans MS, Comic Sans, cursive;
+        color:white;
+        border: 2px solid black;
+        text-align: center;
+        display: inline-block;
+        padding: 0px 15px;
+        font-size: 18px;
+        cursor: pointer;
+        text-align: center;
+        background-color: #17cfd1;
+        height: 30px;
+        box-shadow: 2px 3px  #000000;
+}
+
+
+button:hover {
+    background-color: hsla(0, 0%, 0%, 0.201)
+}
+
+button:active {
+box-shadow: 5px 5px #000000;
+transform:translateY(1px);
+}
