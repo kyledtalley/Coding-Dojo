@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <make>Document</make>
+</head>
+<body>
+    <h1>Welcome {{session['user']}}, add a car!</h1>
+
+    <form action="/car" method="post">
+        {% with messages = get_flashed_messages() %}
+            {% if messages %}
+                {% for message in messages %}
+                    <p>{{message}}</p>
+                {% endfor %}
+            {% endif %}
+        {% endwith %}
+        <label for="make">Make:</label>
+        <input type="text" name="make" id="make">
+        <label for="model">Model:</label>
+        <input type="text" name="model" id="model">
+        <label for="year">Year:</label>
+        <input type="number" name="year" id="year">
+        <label for="price">Price:</label>
+        <input type="number" name="price" id = "price">
+        <label for="description">Description:</label>
+        <input type="text"name = "description" id = "description">
+        <input type="hidden" name="secret" value="{{session['user_id']}}">
+        <input type="submit" value="Add car">
+    </form>
+
+</body>
+</html>
+

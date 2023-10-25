@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<title>Document</title>
+	</head>
+	<body>
+
+		<h1>All My Friends</h1>
+
+		{% for Friend in friends %}    
+        <p>Friend ID: {{Friend.id}}</p> 
+		<p>First Name: {{Friend.first_name}}</p>
+		    
+		<p>Last Name: {{Friend.last_name}}</p>
+		    
+		<p>Occupation: {{Friend.occupation}}</p>
+		    
+		<hr />
+        <a href="/friends/update">Update</a>
+        <a href="/friends/delete/{{Friend.id}}">Delete</a>
+		{% endfor %}
+	</body>
+</html>

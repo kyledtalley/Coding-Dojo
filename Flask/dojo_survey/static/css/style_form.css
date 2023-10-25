@@ -1,0 +1,9 @@
+.container{
+    background-color: hotpink;
+    border: 2px solid black;
+    flex-direction: column;
+    justify-content: center;
+    width: 250px;
+    height: 400px;
+    align-items: center;
+}

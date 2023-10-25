@@ -1,0 +1,28 @@
+*{
+    padding: 0;
+    margin: 0;
+}
+
+.container{
+    display: inline-block;
+}
+
+h1{
+    margin: 15px;
+    height: 150px;
+    width: 150px;
+    border: black solid 2px;
+    border-radius: 15px;
+    background-color: hsl(180 86% 50% / 1);
+
+}
+
+h2{
+    margin: 15px;
+    height: 150px;
+    width: 150px;
+    border: black solid 2px;
+    border-radius: 15px;
+    background-color: hsl(180 86% 50% / 1);
+
+}

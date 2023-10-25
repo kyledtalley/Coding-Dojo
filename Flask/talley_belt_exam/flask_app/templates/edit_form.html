@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Edit</title>
+</head>
+<body>
+    <h1>Made a mistake?</h1>
+
+    <form action="/tree/update" method="post">
+        {% with messages = get_flashed_messages() %}
+            {% if messages %}
+                {% for message in messages %}
+                    <p>{{message}}</p>
+                {% endfor %}
+            {% endif %}
+        {% endwith %}
+        <label for="species">Species:</label>
+        <input type="text" name="species" id="species" value="{{tree.species}}">
+        <label for="location">Location:</label>
+        <input type="text" name="location" id="location" value="{{tree.location}}">
+        <input type="hidden" name="id" value="{{tree.id}}">
+        <input type="submit" value="Edit Tree">
+    </form>
+
+</body>
+</html>

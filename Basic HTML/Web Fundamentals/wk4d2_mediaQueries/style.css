@@ -1,0 +1,36 @@
+*{
+    margin: 0px;
+    padding: 0px;
+}
+
+h1{
+    background-color: red;
+}
+
+@media only screen and (max-width: 1023px){
+    h1{
+        background-color: green;
+    }
+}
+@media(max-width: 480px){
+    .nav-bar{
+        flex-direction: column;
+    }
+    .nav-right{
+        /* flex-direction: column;
+        text-align: center; */
+        display: none;
+    }
+    img{
+        display: inline-block;
+    }
+}
+/* .nav-right{
+
+}
+
+    .footer{
+        padding: 20px;
+
+    }
+.nav-bar{} */

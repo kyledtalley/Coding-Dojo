@@ -1,0 +1,37 @@
+{%extends "home.html"%}
+{%block content%}
+<div class="py-3 pe-3 col-8 mx-auto">
+    <h3>Thank you for ordering!</h3>
+    <p class="fs-bold">Order Details:</p>
+    <!-- If the order is delivery I would like the order confirmation to show the user's address and name -->
+    {%if order.delivery_method == 'delivery'%}
+    <p>{{order.creator.first_name}} {{order.creator.last_name}}</p>
+    <p>{{order.creator.address}}</p>
+    <p>{{order.creator.city}}, {{order.creator.state}} {{order.creator.zip_code}}</p>
+    {%endif%}
+    <div class="d-flex fs-5">
+    <!-- Here I'm able to use count because order.toppings is a list. The reason for this if statement is that I want the text to change
+        depending on if there are toppings or not  -->
+
+        {%if order.toppings | count == 0%}
+        <p>{{order.pizza_size}} Cheese Pizza</p>
+        {%else%}
+        <p>{{order.pizza_size}} Cheese Pizza w/</p>
+        {%endif%}
+        <!-- I'm looping through the list of toppings -->
+        {%for topping in order.toppings%}
+            <p>{{topping}},</p>
+        {%endfor%}
+    </div>
+    <p class="fs-5">Your Order total is ${{order.total}}</p>
+    
+    {%if order.delivery_method == 'delivery' %}
+    <p class="fs-5">Your order will be ready for delivery in 20 minutes.</p>
+    {%else%}
+    <p class="fs-5">Your order will be ready for pick up in 10 minutes.</p>
+    {%endif%}
+    <a href="/order"><button class="btn btn-primary">Go Back</button></a>
+</div>
+
+
+{%endblock content%}

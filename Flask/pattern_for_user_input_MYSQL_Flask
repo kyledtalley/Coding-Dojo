@@ -1,0 +1,10 @@
+query = "SELECT * FROM users WHERE email = %(email)s;"
+
+# the placeholder variable is called email
+# it must match the key name in the data dictionary
+data = {
+    # this 'email' Key in data must be named to match the placeholder in the query.
+    'email': request.form['email']
+}
+result = mysql.query_db(query, data)
+

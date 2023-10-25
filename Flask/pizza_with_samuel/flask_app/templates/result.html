@@ -1,0 +1,13 @@
+{%extends 'index.html'%}
+
+{%block content%}
+<h3>Thank you for ordering!</h3>
+<p>Your order total is: {{session['total']}} </p>
+
+
+{%if session['delivery_method'] == 'delivery'%}
+<p>Your order will be ready for delivery in 20 minutes.</p>
+{%else%}
+<p>Your order will be ready for pickup in 10 minutes.</p>
+{%endif%}
+{%endblock content%}

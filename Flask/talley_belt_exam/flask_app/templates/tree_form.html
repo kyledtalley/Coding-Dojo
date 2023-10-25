@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tree Registration</title>
+</head>
+<body>
+    <h1>Welcome {{session['user']}}, plant a tree!</h1>
+
+    <form action="/tree" method="post">
+        {% with messages = get_flashed_messages() %}
+            {% if messages %}
+                {% for message in messages %}
+                    <p>{{message}}</p>
+                {% endfor %}
+            {% endif %}
+        {% endwith %}
+        <label for="species">Species:</label>
+        <input type="text" name="species" id="species">
+        <label for="location">Location:</label>
+        <input type="text" name="location" id="location">
+        <label for="date_planted">Date Planted:</label>
+        <input type="datetime-local" name = "date_planted" id="date_planted">
+        <input type="hidden" name="secret" value="{{session['user_id']}}">
+        <input type="submit" value="Plant Tree">
+    </form>
+
+</body>
+</html>
+

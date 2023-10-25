@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+
+
+    <form action="/user/{{user.id}}" method="post">
+        <label type="text" for="first_name">first_name: </label>
+        <input type="text" name = "first_name" id = "user_name" value = "{{user.first_name}}">
+        <label type="text" for="last_name">last_name: </label>
+        <input type="text" name = "last_name" id = "last_name" value = "{{user.last_name}}">
+    </form>
+</body>
+</html>

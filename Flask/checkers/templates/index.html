@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+
+    {%for i in range(8)%}
+        {%if i%2 == 0%}
+            <div class = "black" style="background-color: black; width: 150px; height: 150px; border: 2px solid white; flex-direction: row;"></div>
+        {%else%}
+            <div class = "red" style="background-color: black; width: 150px; height: 150px; border: 2px solid white; flex-direction: row;"></div>
+        {{%endif%}}
+    {%endfor%}
+</body>
+</html>

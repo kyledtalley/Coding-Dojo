@@ -5,6 +5,25 @@
 "editor.defaultFormatter": "esbenp.prettier-vscode",
 "[html]": {
 "editor.defaultFormatter": "vscode.html-language-features"},
-"prettier.tabWidth": 4
+"prettier.tabWidth": 4,
+"[python]": {
+    "editor.defaultFormatter": "ms-python.autopep8"
+},
+"python.formatting.provider": "none",
+"sqltools.connections": [
+    {
+        "mysqlOptions": {
+            "authProtocol": "default",
+            "enableSsl": "Disabled"
+        },
+        "previewLimit": 50,
+        "server": "localhost",
+        "port": 3306,
+        "driver": "MySQL",
+        "name": "test",
+        "database": "airbnb",
+        "username": "root"
+    }
+]
 }
 
