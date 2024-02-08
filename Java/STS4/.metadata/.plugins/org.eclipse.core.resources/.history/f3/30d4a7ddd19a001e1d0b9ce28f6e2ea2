@@ -1,0 +1,47 @@
+package com.coreym.javaPokemon.controllers;
+
+import java.io.UnsupportedEncodingException;
+
+import org.springframework.web.bind.annotation.GetMapping;
+import org.springframework.web.bind.annotation.RequestParam;
+import org.springframework.web.bind.annotation.RestController;
+import org.springframework.web.reactive.function.client.WebClient;
+
+import com.coreym.javaPokemon.models.Pokemon;
+import com.coreym.javaPokemon.models.PokemonList;
+
+@RestController
+public class ApiController {
+
+	private final String API = "https://pokeapi.co/api/v2/";
+	private final WebClient client = WebClient.create();
+
+	@GetMapping("/api/pokemon")
+	public PokemonList getAllPokemon(@RequestParam(value = "limit", defaultValue = "2000") int limit) {
+	    // Adjust the API call to include the 'limit' parameter
+	    PokemonList response = client.get()
+	        .uri(uriBuilder -> uriBuilder
+	            .path(API + "pokemon")
+	            .queryParam("limit", limit) // Add the 'limit' parameter to the URI
+	            .build())
+	        .retrieve()
+	        .bodyToMono(PokemonList.class)
+	        .block();
+
+	    return response;
+	}
+
+	@GetMapping("/api/pokemon/get")
+	public Pokemon fetchData(String url) throws UnsupportedEncodingException {
+		
+		System.out.println(url);
+		Pokemon response = client.get()
+				.uri(url)
+				.retrieve()
+				.bodyToMono(Pokemon.class)
+				.block();
+
+		return response;
+	}
+
+}

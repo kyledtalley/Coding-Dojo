@@ -1,0 +1,35 @@
+package com.codingdojo.JavaExamPrep.controllers;
+
+import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.stereotype.Controller;
+import org.springframework.ui.Model;
+import org.springframework.web.bind.annotation.GetMapping;
+
+import com.codingdojo.JavaExamPrep.models.User;
+import com.codingdojo.JavaExamPrep.services.UserService;
+
+import jakarta.servlet.http.HttpSession;
+
+@Controller
+public class HomeController {
+
+	@Autowired
+	private UserService authService;
+	
+	
+	@GetMapping("/")
+	public String Home(HttpSession session, Model model) {
+		
+		Long loggedInId = (Long) session.getAttribute("loggedInUser");
+		
+		User loggedInUser = authService.findOne(loggedInId);
+		
+		model.addAttribute("loggedInUser", loggedInUser);
+		
+		
+		
+		return "home.jsp";
+	}
+	
+	
+}

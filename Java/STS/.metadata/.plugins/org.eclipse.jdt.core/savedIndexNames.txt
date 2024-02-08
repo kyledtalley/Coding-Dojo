@@ -1,0 +1,4 @@
+INDEX VERSION 1.131+C:\Users\kylet\OneDrive\Desktop\Coding Dojo\Java\STS\.metadata\.plugins\org.eclipse.jdt.core
+1122324707.index
+1865797976.index
+3436446767.index

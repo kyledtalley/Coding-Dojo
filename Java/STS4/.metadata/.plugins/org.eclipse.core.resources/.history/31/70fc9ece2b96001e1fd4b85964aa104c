@@ -1,0 +1,18 @@
+package com.codingdojo.productsandcategories.services;
+@Service
+public class ProductService {
+
+	public Product
+	
+	
+	public Product createProduct(Product product) {
+		return pRepo.save(product);
+	}
+	
+	public Product createProduct(Product product) {
+		return pRepo.save(product);
+	}
+	
+	
+	
+}

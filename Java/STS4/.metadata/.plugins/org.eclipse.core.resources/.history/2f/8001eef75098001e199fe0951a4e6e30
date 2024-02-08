@@ -1,0 +1,39 @@
+package com.codingdojo.productsandcategories.controllers;
+
+import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.stereotype.Controller;
+import org.springframework.ui.Model;
+import org.springframework.validation.BindingResult;
+import org.springframework.web.bind.annotation.GetMapping;
+import org.springframework.web.bind.annotation.ModelAttribute;
+import org.springframework.web.bind.annotation.PostMapping;
+import org.springframework.web.bind.annotation.RequestMapping;
+
+import com.codingdojo.productsandcategories.models.Product;
+import com.codingdojo.productsandcategories.services.ProductService;
+
+import jakarta.validation.Valid;
+
+@Controller
+@RequestMapping("/products")
+public class ProductController {
+
+	@Autowired
+	private ProductService pService;
+	
+	@GetMapping("/new")
+	public String productForm(@ModelAttribute("product")Product product, Model model) {
+		return "/products/new.jsp";
+	}
+	
+	@PostMapping("/new")
+	public String newProduct(@Valid @ModelAttribute("product") Product product, BindingResult result) {
+		if(result.hasErrors()) {
+			return "/products/new.jsp";
+		}
+		
+		pService.createProduct(product);
+		return "redirect:/";
+		
+	}
+}

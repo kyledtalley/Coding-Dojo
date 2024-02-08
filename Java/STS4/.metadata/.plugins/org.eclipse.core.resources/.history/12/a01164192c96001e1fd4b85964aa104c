@@ -1,0 +1,37 @@
+package com.codingdojo.productsandcategories.services;
+
+import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.stereotype.Service;
+
+import com.codingdojo.productsandcategories.models.Category;
+import com.codingdojo.productsandcategories.models.Product;
+import com.codingdojo.productsandcategories.repositories.CategoryRepository;
+import com.codingdojo.productsandcategories.repositories.ProductRepository;
+
+@Service
+public class ProductService {
+
+	@Autowired
+	private ProductRepository pRepo;
+	
+	@Autowired
+	private CategoryRepository cRepo;
+	
+	public Product addCategoriesToProducts(Long categoryId, Long productId) {
+		Product oneProduct = cRepo.findById(categoryId).orElse(null);
+		Category oneCategory = pRepo.findById(productId).orElse(null);
+		oneCategory.getProducts().add(oneProduct);
+		return oneCategory;
+	}
+	
+	public Product createProduct(Product product) {
+		return pRepo.save(product);
+	}
+	
+	public Product updateProduct(Product product) {
+		return pRepo.save(product);
+	}
+	
+	
+	
+}

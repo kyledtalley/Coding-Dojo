@@ -1,0 +1,140 @@
+package com.codingdojo.javapoke.models;
+
+
+
+public class Pokemon {
+
+	private Long id;
+	
+	private String name;
+	
+	private Integer height;
+	
+	
+	private Double weight;
+	
+	
+	private String[] types;
+	
+	private Integer hp;
+	
+	private Integer attack;
+	
+	private Integer defense;
+	
+	private Integer spAttack;
+	
+	private Integer spDefense;
+	
+	private Integer speed;
+	
+	public Pokemon() {
+		
+	}
+
+	public Pokemon(Long id, String name, Integer height, Double weight, String[] types, Integer hp, Integer attack,
+			Integer defense, Integer spAttack, Integer spDefense, Integer speed) {
+		super();
+		this.id = id;
+		this.name = name;
+		this.height = height;
+		this.weight = weight;
+		this.types = types;
+		this.hp = hp;
+		this.attack = attack;
+		this.defense = defense;
+		this.spAttack = spAttack;
+		this.spDefense = spDefense;
+		this.speed = speed;
+	}
+
+	public Long getId() {
+		return id;
+	}
+
+	public void setId(Long id) {
+		this.id = id;
+	}
+
+	public String getName() {
+		return name;
+	}
+
+	public void setName(String name) {
+		this.name = name;
+	}
+
+	public Integer getHeight() {
+		return height;
+	}
+
+	public void setHeight(Integer height) {
+		this.height = height;
+	}
+
+	public Double getWeight() {
+		return weight;
+	}
+
+	public void setWeight(Double weight) {
+		this.weight = weight;
+	}
+
+	public String[] getTypes() {
+		return types;
+	}
+
+	public void setTypes(String[] types) {
+		this.types = types;
+	}
+
+	public Integer getHp() {
+		return hp;
+	}
+
+	public void setHp(Integer hp) {
+		this.hp = hp;
+	}
+
+	public Integer getAttack() {
+		return attack;
+	}
+
+	public void setAttack(Integer attack) {
+		this.attack = attack;
+	}
+
+	public Integer getDefense() {
+		return defense;
+	}
+
+	public void setDefense(Integer defense) {
+		this.defense = defense;
+	}
+
+	public Integer getSpAttack() {
+		return spAttack;
+	}
+
+	public void setSpAttack(Integer spAttack) {
+		this.spAttack = spAttack;
+	}
+
+	public Integer getSpDefense() {
+		return spDefense;
+	}
+
+	public void setSpDefense(Integer spDefense) {
+		this.spDefense = spDefense;
+	}
+
+	public Integer getSpeed() {
+		return speed;
+	}
+
+	public void setSpeed(Integer speed) {
+		this.speed = speed;
+	}
+	
+	
+}

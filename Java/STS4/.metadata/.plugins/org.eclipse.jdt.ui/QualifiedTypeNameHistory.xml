@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<qualifiedTypeNameHistroy>
+    <fullyQualifiedTypeName name="com.codingdojo.fruityloops.Item"/>
+    <fullyQualifiedTypeName name="java.util.ArrayList"/>
+    <fullyQualifiedTypeName name="com.codingdojo.jpademo.models.Book"/>
+    <fullyQualifiedTypeName name="java.security.Provider.Service"/>
+    <fullyQualifiedTypeName name="org.apache.catalina.Service"/>
+    <fullyQualifiedTypeName name="jakarta.validation.constraints.NotEmpty"/>
+    <fullyQualifiedTypeName name="com.codingdojo.dojosandninjas.services.DojoService"/>
+    <fullyQualifiedTypeName name="com.coreym.mvcdemo.models.User"/>
+    <fullyQualifiedTypeName name="jakarta.persistence.FetchType"/>
+    <fullyQualifiedTypeName name="org.springframework.web.servlet.mvc.support.RedirectAttributes"/>
+    <fullyQualifiedTypeName name="java.util.Optional"/>
+    <fullyQualifiedTypeName name="com.codingdojo.loginandregistration.models.User"/>
+    <fullyQualifiedTypeName name="jakarta.validation.constraints.Email"/>
+    <fullyQualifiedTypeName name="jakarta.persistence.Transient"/>
+    <fullyQualifiedTypeName name="org.springframework.validation.BindingResult"/>
+    <fullyQualifiedTypeName name="jakarta.servlet.http.HttpSession"/>
+    <fullyQualifiedTypeName name="com.codingdojo.bookclub.models.User"/>
+    <fullyQualifiedTypeName name="com.codingdojo.bookclub.models.Book"/>
+    <fullyQualifiedTypeName name="org.mindrot.jbcrypt.BCrypt"/>
+    <fullyQualifiedTypeName name="jakarta.persistence.criteria.Fetch"/>
+    <fullyQualifiedTypeName name="com.codingdojo.JavaExamPrep.repositories.GameRepository"/>
+    <fullyQualifiedTypeName name="java.util.Date"/>
+    <fullyQualifiedTypeName name="com.codingdojo.productsandcategories.models.Category"/>
+    <fullyQualifiedTypeName name="com.codingdojo.dojooverflow.models.Question"/>
+    <fullyQualifiedTypeName name="com.codingdojo.dojooverflow.models.Tag"/>
+    <fullyQualifiedTypeName name="org.springframework.web.reactive.function.client.WebClient"/>
+    <fullyQualifiedTypeName name="org.springframework.web.reactive.function.client.WebClient.RequestBodySpec"/>
+    <fullyQualifiedTypeName name="org.springframework.web.reactive.function.client.WebClient.UriSpec"/>
+    <fullyQualifiedTypeName name="org.springframework.web.reactive.function.client.WebClient.RequestHeadersSpec"/>
+    <fullyQualifiedTypeName name="jakarta.persistence.CascadeType"/>
+    <fullyQualifiedTypeName name="com.codingdojo.JavaExamPrep.repositories.BookRepository"/>
+    <fullyQualifiedTypeName name="org.springframework.ui.Model"/>
+    <fullyQualifiedTypeName name="com.codingdojo.JavaExamPrep.models.User"/>
+    <fullyQualifiedTypeName name="com.codingdojo.JavaExamPrep.services.BookService"/>
+    <fullyQualifiedTypeName name="com.codingdojo.JavaExamPrep.models.Book"/>
+    <fullyQualifiedTypeName name="ch.qos.logback.core.util.Duration"/>
+    <fullyQualifiedTypeName name="java.time.Duration"/>
+    <fullyQualifiedTypeName name="jakarta.persistence.Table"/>
+    <fullyQualifiedTypeName name="jakarta.validation.constraints.NotBlank"/>
+    <fullyQualifiedTypeName name="jakarta.persistence.Id"/>
+    <fullyQualifiedTypeName name="jakarta.validation.constraints.NotNull"/>
+    <fullyQualifiedTypeName name="java.util.List"/>
+    <fullyQualifiedTypeName name="javax.swing.text.Document"/>
+</qualifiedTypeNameHistroy>

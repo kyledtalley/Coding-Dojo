@@ -1,0 +1,5 @@
+package com.codingdojo.JavaExamPrep.repositories;
+
+public interface SongRepository {
+
+}

@@ -1,0 +1,124 @@
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.pokedexContainer{
+  width: 75em;
+  /* border: 3px solid red; */
+  display: flex;
+  gap: 2.5em;
+  border-radius: 10px;
+  flex-wrap: wrap;
+  justify-content: center;
+  margin-bottom: 50px;
+}
+
+.pokedexCard{
+  /* border: 5px solid white; */
+  flex-grow: 2;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  font-size: 15px;
+  margin: 0;
+  text-transform: uppercase;
+  border-radius: 10px;
+  background-color: rgb(30,31,38);
+}
+
+.pokeName{
+  /* border: 5px solid white; */
+  width: 8em;
+  height: 2em;
+  padding: 8px;
+  text-align: center;
+}
+
+.pokeImg{
+  /* border: 5px solid white; */
+  width: 7em;
+  height: 7em;
+  padding: 10px;
+}
+
+.pokeType{
+  width: 10em;
+  height: 3em;
+  padding: 10px;
+}
+
+.container{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  /* border: 5px solid white; */
+}
+
+.navContainer{
+  /* border: 5px solid white; */
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.navUl{
+  display: flex;
+  width: 200px;
+  /* border: 5px solid white; */
+  justify-content: space-around;
+  list-style: none;
+  padding: 2px;
+}
+
+.pokeDetsContainer{
+  /* border: 5px solid white; */
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin-top: 50px;
+}
+
+.pokeDetsCard{
+  /* border: 5px solid white; */
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  font-size: 15px;
+  margin: 0;
+  text-transform: uppercase;
+  border-radius: 10px;
+  background-color: rgb(30,31,38);
+  width: 30%;
+}
+
+.pokeDetsName{
+  /* border: 5px solid white; */
+  width: 10em;
+  height: 3em;
+  padding: 8px;
+  text-align: center;
+}
+
+.pokeDetsImg{
+  /* border: 5px solid white; */
+  width: 10em;
+  height: 10em;
+  padding: 10px;
+}
+
+.pokeTypes{
+  /* border: 3px solid red; */
+  display: flex;
+  gap: 1em;
+  flex-wrap: wrap;
+  justify-content: center;
+}

@@ -1,0 +1,5 @@
+package com.codingdojo.productsandcategories.services;
+
+public class ProductService {
+
+}

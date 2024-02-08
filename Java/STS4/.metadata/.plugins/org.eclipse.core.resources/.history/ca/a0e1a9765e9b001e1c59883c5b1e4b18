@@ -1,0 +1,26 @@
+package com.coreym.javaPokemon.models;
+import org.springframework.context.annotation.Bean;
+import org.springframework.context.annotation.Configuration;
+import org.springframework.http.client.reactive.ReactorClientHttpConnector;
+import org.springframework.web.reactive.function.client.WebClient;
+
+import io.netty.channel.ChannelOption;
+import io.netty.handler.timeout.ReadTimeoutHandler;
+import reactor.netty.http.client.HttpClient;
+
+@Configuration
+public class CustomWebClientConfig {
+
+    @Bean
+    public WebClient customWebClient() {
+        HttpClient httpClient = HttpClient.create()
+                // Configure your HTTP client options here
+                .tcpConfiguration(client ->
+                        client.option(ChannelOption.CONNECT_TIMEOUT_MILLIS, 5000)
+                                .doOnConnected(conn -> conn.addHandlerLast(new ReadTimeoutHandler(10))));
+
+        return WebClient.builder()
+                .clientConnector(new ReactorClientHttpConnector(httpClient))
+                .build();
+    }
+}

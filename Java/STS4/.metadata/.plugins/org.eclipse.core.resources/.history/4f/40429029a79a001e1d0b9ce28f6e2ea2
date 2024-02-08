@@ -1,0 +1,5 @@
+package com.codingdojo.JavaExamPrep.services;
+
+public class BookService {
+
+}

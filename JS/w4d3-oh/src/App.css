@@ -1,0 +1,24 @@
+#root {
+  max-width: 1280px;
+  margin: 0 auto;
+  padding: 2rem;
+  text-align: center;
+}
+
+.holidayCard{
+  border: 5px solid green;
+  height: 500px;
+  width: 500px;
+}
+
+.holidayImage{
+  z-index: -1;
+  height: 500px;
+  width: 500px;
+  opacity: .4;
+  object-fit: hidden;
+}
+
+h2 {
+  z-index: 10;
+}

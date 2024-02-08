@@ -1,0 +1,49 @@
+.header{
+  background-color: hsl(104.63deg 32.28% 49.8%);
+  margin: 10px;
+  height: 150px;
+}
+
+.main {
+  height: 400px;
+  width: 700px;
+  background-color: hsl(359.5deg 65.22% 63.92%);
+  margin: 0px 1px;
+}
+
+.subContent {
+  height: 200px;
+  width: 210px;
+  background-color: hsl(43.83deg 100% 72.35%);
+  display: inline-block;
+  margin: 10px;
+}
+
+.advertisement {
+  height: 120px;
+  width: 660px;
+  background-color: hsl(257.33deg 34.35% 74.31%);
+  margin: 10px;
+
+}
+
+.side-nav {
+  height: 300px;
+  width: 200px;
+  background-color: hsl(208deg 58.01% 64.51%);
+  margin: 0px 10px;
+}
+
+.side-nav, .main, .sub-content, .advertisement{
+    display: inline-block;
+    vertical-align: top;
+}
+
+.app{
+  width: 950px;
+  background-color: hsl(0deg 0% 86.67%);
+  margin: 0 auto;
+  padding: 10px;
+}
+
+

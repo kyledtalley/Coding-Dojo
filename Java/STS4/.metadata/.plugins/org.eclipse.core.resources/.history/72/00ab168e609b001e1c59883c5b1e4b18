@@ -1,0 +1,23 @@
+package com.coreym.javaPokemon.services;
+
+import org.springframework.web.reactive.function.client.WebClient;
+
+import com.coreym.javaPokemon.models.Pokemon;
+
+import reactor.core.publisher.Flux;
+
+public class PokemonService {
+    
+    private final WebClient webClient;
+
+    public PokemonService(WebClient.Builder webClientBuilder) {
+        this.webClient = webClientBuilder.baseUrl("https://pokeapi.co/api/v2/pokemon").build();
+    }
+
+    public Flux<Pokemon> getPokemons(Inteer offset) {
+        return webClient.get()
+                .uri("/?limit=100") // Adjust parameters as needed for pagination
+                .retrieve()
+                .bodyToFlux(Pokemon.class);
+    }
+}

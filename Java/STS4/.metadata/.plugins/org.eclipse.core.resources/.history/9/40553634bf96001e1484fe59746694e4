@@ -1,0 +1,23 @@
+package com.codingdojo.productsandcategories.controllers;
+
+import org.springframework.stereotype.Controller;
+import org.springframework.ui.Model;
+import org.springframework.web.bind.annotation.GetMapping;
+import org.springframework.web.bind.annotation.ModelAttribute;
+import org.springframework.web.bind.annotation.RequestMapping;
+
+import com.codingdojo.productsandcategories.models.Product;
+
+import jakarta.servlet.http.HttpSession;
+
+@Controller
+@RequestMapping("/products")
+public class ProductController {
+
+	
+	@GetMapping("/new")
+	public String productForm(@ModelAttribute("product")Product product, HttpSession session, Model model) {
+		return "/products/new.jsp";
+	}
+	
+}

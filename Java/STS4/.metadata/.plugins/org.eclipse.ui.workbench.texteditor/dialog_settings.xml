@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<section name="Workbench">
+	<section name="org.eclipse.ui.texteditor.GotoLineAction$GotoLineDialog_dialogBounds">
+		<item key="DIALOG_X_ORIGIN" value="724"/>
+		<item key="DIALOG_Y_ORIGIN" value="416"/>
+	</section>
+	<section name="org.eclipse.ui.texteditor.FindReplaceDialog">
+		<item key="selection" value="genre"/>
+		<item key="wrap" value="true"/>
+		<item key="casesensitive" value="true"/>
+		<item key="wholeword" value="false"/>
+		<item key="incremental" value="false"/>
+		<item key="isRegEx" value="false"/>
+		<list key="findhistory">
+			<item value="pizzaSize"/>
+			<item value="pizzaType"/>
+			<item value="songs"/>
+			<item value="Pizza"/>
+			<item value="pizza"/>
+			<item value="//"/>
+			<item value="getAllPokemonWithLimit"/>
+			<item value="author"/>
+			<item value="year"/>
+			<item value="model"/>
+			<item value="make"/>
+			<item value="car"/>
+			<item value="Car"/>
+			<item value="topping"/>
+			<item value="Topping"/>
+		</list>
+		<list key="replacehistory">
+			<item value="genre"/>
+			<item value="title"/>
+			<item value="Song"/>
+			<item value="song"/>
+			<item value=" "/>
+			<item value="thoughts"/>
+			<item value="author"/>
+			<item value="book"/>
+			<item value="Book"/>
+			<item value="question"/>
+			<item value="Question"/>
+			<item value="answer"/>
+			<item value="Answer"/>
+			<item value="Tag"/>
+			<item value="tag"/>
+		</list>
+	</section>
+	<section name="org.eclipse.ui.texteditor.FindReplaceDialog_dialogBounds">
+		<item key="DIALOG_X_ORIGIN" value="723"/>
+		<item key="DIALOG_Y_ORIGIN" value="288"/>
+		<item key="DIALOG_WIDTH" value="322"/>
+		<item key="DIALOG_HEIGHT" value="391"/>
+		<item key="DIALOG_FONT_NAME" value="1|Segoe UI|9.0|0|WINDOWS|1|-12|0|0|0|400|0|0|0|1|0|0|5|0|Segoe UI"/>
+	</section>
+</section>

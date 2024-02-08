@@ -1,0 +1,34 @@
+.lightMode{
+  background-color: white;
+  color: black;
+  height: 100vh;
+  width: 100vw;
+}
+
+.darkMode{
+  background-color: black;
+  color: white;
+  height: 100vh;
+  width: 100vw;
+}
+
+.redMode{
+  background-color: red;
+  color: white;
+  height: 100vh;
+  width: 100vw;
+}
+
+.blueMode{
+  background-color: blue;
+  color: white;
+  height: 100vh;
+  width: 100vw;
+}
+
+.pinkMode{
+  background-color: pink;
+  color: black;
+  height: 100vh;
+  width: 100vw;
+}

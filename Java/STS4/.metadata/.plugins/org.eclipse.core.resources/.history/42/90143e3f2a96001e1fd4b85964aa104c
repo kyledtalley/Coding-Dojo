@@ -1,0 +1,18 @@
+package com.codingdojo.productsandcategories.services;
+
+import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.stereotype.Service;
+
+import com.codingdojo.productsandcategories.repositories.CategoryRepository;
+import com.codingdojo.productsandcategories.repositories.ProductRepository;
+
+@Service
+public class CategoryService {
+
+	@Autowired
+	private ProductRepository pRepo;
+	
+	@Autowired
+	private CategoryRepository cRepo;
+	
+}
