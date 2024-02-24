@@ -1,0 +1,309 @@
+/*This is the most CSS I've ever done*/
+
+* {
+	font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI",
+		Roboto, Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue",
+		sans-serif;
+
+}
+:root {
+	--secondary-color: rgb(0, 255, 94);
+}
+@keyframes move {
+	100% {
+		transform: translate3d(0, 0, 1px) rotate(360deg);
+	}
+}
+
+.homeContainer {
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+	margin-top: 20px;
+	font-size: 35px;
+}
+
+h1 {
+	text-align: center;
+	margin-bottom: 20px;
+}
+.putShadowHere{
+	color: var(--secondary-color);
+	text-shadow:
+        -1px -1px 2px #00fffb,
+         1px -1px 5px #00ffff,
+        -1px  1px 2px #000000,
+         1px  1px 2px #000000;
+}
+.homeTitle {
+	color: var(--secondary-color);
+	opacity: 0.9;
+	text-shadow: -5px 2px 12px rgba(0, 255, 247, 0.584),
+		5px -2px 20px rgba(213, 24, 194, 0.528);
+	font-family: "Brush Script MT", cursive;
+}
+table {
+	color: var(--secondary-color);
+	font-size: 24px;
+	border-collapse: separate;
+	border-spacing: 0;
+	border: 2px solid var(--secondary-color);
+	border-radius: 10px;
+	overflow: hidden;
+	box-shadow: -10px 4px 20px rgba(0, 255, 247, 0.227),
+		10px -4px 20px rgba(213, 24, 194, 0.2);
+	background-color: rgb(0, 0, 0);
+	margin: 20px auto;
+	opacity: 0.85;
+}
+
+table tbody tr td {
+	color: var(--secondary-color);
+	padding: 8px 20px;
+	border-right-width: 1px;
+	border-top-width: 1px;
+	border-bottom-width: 1px;
+	border-left-width: 1px;
+	border-style: solid;
+	border-color: var(--secondary-color);
+	box-shadow: 0 4px 8px rgba(255, 255, 255, 0.2);
+}
+
+
+.container {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: center;
+	min-height: 100vh;
+}
+
+.form {
+	color: var(--secondary-color);
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	padding: 20px;
+	border-radius: 10px;
+	background-color: rgb(0, 0, 0);
+	opacity: 0.91;
+	box-shadow: -10px 4px 50px rgba(0, 255, 247, 0.5),
+		10px -4px 50px rgba(213, 24, 194, 0.472);
+	width: 100%;
+	max-width: 400px;
+}
+
+.label {
+	margin-top: 10px;
+	font-weight: bold;
+}
+
+.input,
+.form input[type="checkbox"] {
+	margin: 5px 0 15px;
+	padding: 10px;
+	border: 1px solid var(--secondary-color);
+	border-radius: 5px;
+	width: 100%;
+}
+
+.form input[type="checkbox"] {
+	width: auto;
+}
+.homeContainer {
+	color: var(--secondary-color);
+}
+.submitButton {
+	padding: 10px 20px;
+	border: none;
+	border-radius: 5px;
+	background-color: black;
+	color: var(--secondary-color);
+	cursor: pointer;
+	transition: background-color 0.4s ease;
+}
+
+.submitButton:hover {
+	background-color: var(--secondary-color);
+}
+.submitButton:disabled {
+	background-color: #cccccc;
+	color: #666666;
+	cursor: not-allowed;
+}
+
+.deleteButton {
+	padding: 10px 20px;
+	border: none;
+	border-radius: 5px;
+	background-color: #dc3545;
+	color: rgb(0, 0, 0);
+	cursor: pointer;
+	transition: background-color 0.4s, color 0.4s;
+	box-shadow: 0px 0px 18px rgb(255, 0, 0);
+}
+.deleteButton:disabled {
+	background-color: #cccccc;
+	color: #666666;
+	cursor: not-allowed;
+}
+
+.deleteButton:hover {
+	background-color: #c82333;
+	color: #fff;
+}
+
+.header {
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	padding: 10px 20px;
+	background-color: #ceffc6;
+	border-radius: 50px;
+	box-shadow: -10px 4px 20px rgba(0, 255, 247, 0.5),
+		10px -5px 40px rgba(213, 24, 194, 0.63);
+	opacity: 0.95;
+	font-size: 25px;
+}
+
+.header-left,
+.header-right {
+	display: flex;
+	align-items: center;
+}
+
+.header-right{
+	font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+	text-shadow: -10px 4px 20px rgba(0, 255, 247, 0.5),
+		10px -5px 40px rgba(213, 24, 194, 0.63);
+}
+
+.header-button {
+	margin-right: 10px;
+	padding: 5px 10px;
+	text-decoration: none;
+	color: #000000;
+	border: 2px solid #000000;
+	border-radius: 5px;
+	background-color: rgba(0, 0, 0, 0.133);
+	transition: background-color 0.4s, color 0.4s;
+	box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+	opacity: 1;
+}
+
+.header-button:hover {
+	background-color:  var(--secondary-color);
+	color:  var(--secondary-color);
+}
+.editLink {
+	font-size: 25px;
+	color:  var(--secondary-color);
+	text-shadow:
+        -1px -1px 10px #00fffb,
+         1px -1px 10px #00ffff,
+        -1px  1px 10px #00ffdd,
+         1px  1px 10px #00fffb;
+}
+.editLink:visited {
+	color:  var(--secondary-color);
+	text-shadow:
+        -1px -1px 10px #00fffb,
+         1px -1px 10px #00ffff,
+        -1px  1px 10px #00ffdd,
+         1px  1px 10px #00fffb;
+}
+.editLink:hover:visited {
+	color:  var(--secondary-color);
+}
+.edit-link-container {
+    text-align: center;
+
+}
+.detLink {
+	color:  var(--secondary-color);
+	font-size: 20px;
+	font-weight: 400;
+}
+.detLink:visited {
+	color:  var(--secondary-color);
+}
+.detLink:hover:visited {
+	color:  var(--secondary-color);
+}
+
+.linkToButton {
+	margin-right: 10px;
+	padding: 5px 10px;
+	text-decoration: none;
+	color: #000000;
+	border: 2px solid #000000;
+	border-radius: 5px;
+	background-color: black;
+	transition: background-color 0.4s, color 0.4s;
+	box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+.linkToButton:hover {
+	background-color:  var(--secondary-color);
+
+}
+
+.detailsContainer {
+	font-size: 28px;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: center;
+	min-height: 100vh;
+	text-align: center;
+	padding: 20px;
+
+}
+
+
+.dets {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: auto auto;
+    gap: 20px;
+    align-items: start;
+    margin: 50px auto;
+    width: 100%;
+    max-width: 600px;
+    background-color: black;
+    opacity: 0.9;
+    border-radius: 10px;
+    box-shadow: -10px 4px 50px rgba(0, 255, 247, 0.5), 10px -4px 50px rgba(213, 24, 194, 0.472);
+    text-align: center;
+}
+
+.dets label {
+	margin-top: 20px;
+    font-size: 24px;
+    font-weight: bold;
+    margin-bottom: 10px;
+	color:  var(--secondary-color);
+}
+
+.dets p {
+	font-size: 20px;
+	margin-bottom: 15px;
+	color:  var(--secondary-color);
+}
+.detailsDesc {
+	font-size: 25px;
+	font-weight: bold;
+	color:  var(--secondary-color);
+	margin: 5px 0;
+}
+
+.deleteButton {
+	align-self: center;
+	margin-top: 20px;
+}
+
+.error-message {
+	color: red;
+	margin: 5px 0;
+	font-size: 15px;
+}

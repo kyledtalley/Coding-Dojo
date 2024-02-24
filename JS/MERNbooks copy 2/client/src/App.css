@@ -3,6 +3,10 @@
 		Roboto, Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue",
 		sans-serif;
 }
+@font-face {
+	font-family: 'Keswah personaluse', sans-serif;
+	src: url("https://fonts.cdnfonts.com/css/keswah-personaluse");
+}
 
 .homeContainer {
 	display: flex;
@@ -167,9 +171,7 @@ table tbody tr td {
 	min-height: 100vh;
 	text-align: center;
 	padding: 20px;
-
 }
-
 
 .bookEntry {
 	border-radius: 10px;

@@ -10,8 +10,6 @@ import NotFound from "./errors/NotFound"
 import "./App.css"
 
 function App() {
-	const [count, setCount] = useState(0)
-
 	return (
 		<>
 			<BrowserRouter>

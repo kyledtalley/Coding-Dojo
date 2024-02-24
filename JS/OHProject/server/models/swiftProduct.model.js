@@ -26,4 +26,4 @@ const SwiftyProdSchema = new Schema(
     { timestamps: true }
 );
 const SwiftyProd = model("SwiftyProd", SwiftyProdSchema);
-export default SwiftyProdSchema;
+export default swiftyProduct

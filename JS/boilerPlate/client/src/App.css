@@ -1,0 +1,293 @@
+/*This is the most CSS I've ever done*/
+
+* {
+	font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI",
+		Roboto, Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue",
+		sans-serif;
+
+}
+@keyframes move {
+	100% {
+		transform: translate3d(0, 0, 1px) rotate(360deg);
+	}
+}
+
+.homeContainer {
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+	margin-top: 20px;
+	font-size: 35px;
+}
+
+h1 {
+	text-align: center;
+	margin-bottom: 20px;
+}
+.putShadowHere{
+	text-shadow: 0 4px 8px rgb(255, 246, 254);
+}
+.homeTitle {
+	color: rgb(17, 1, 13);
+	opacity: 0.9;
+	/* text-shadow: 0px 1px 8px rgba(0, 0, 0, 0.391); */
+	text-shadow: -5px 2px 12px rgba(0, 255, 247, 0.3),
+		5px -2px 20px rgba(213, 24, 194, 0.3);
+	font-family: "Brush Script MT", cursive;
+}
+table {
+	font-size: 24px;
+	border-collapse: separate;
+	border-spacing: 0;
+	border: 2px solid black;
+	border-radius: 10px;
+	overflow: hidden;
+	box-shadow: -10px 4px 20px rgba(0, 255, 247, 0.227),
+		10px -4px 20px rgba(213, 24, 194, 0.2);
+	background-color: rgb(255, 246, 254);
+	margin: 20px auto;
+	opacity: 0.85;
+}
+
+table tbody tr td {
+	padding: 8px 20px;
+	border-right-width: 1px;
+	border-top-width: 1px;
+	border-bottom-width: 1px;
+	border-left-width: 1px;
+	border-style: solid;
+	border-color: black;
+	box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+
+.container {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: center;
+	min-height: 100vh;
+}
+
+.form {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	padding: 20px;
+	border-radius: 10px;
+	background-color: white;
+	opacity: 0.91;
+	box-shadow: -10px 4px 50px rgba(0, 255, 247, 0.5),
+		10px -4px 50px rgba(213, 24, 194, 0.472);
+	width: 100%;
+	max-width: 400px;
+}
+
+.label {
+	margin-top: 10px;
+	font-weight: bold;
+}
+
+.input,
+.form input[type="checkbox"] {
+	margin: 5px 0 15px;
+	padding: 10px;
+	border: 1px solid #ccc;
+	border-radius: 5px;
+	width: 100%;
+}
+
+.form input[type="checkbox"] {
+	width: auto;
+}
+
+.submitButton {
+	padding: 10px 20px;
+	border: none;
+	border-radius: 5px;
+	background-color: #f05df09a;
+	color: white;
+	cursor: pointer;
+	transition: background-color 0.3s ease;
+}
+
+.submitButton:hover {
+	background-color: #f73ce8;
+}
+.submitButton:disabled {
+	background-color: #cccccc;
+	color: #666666;
+	cursor: not-allowed;
+}
+
+.deleteButton {
+	padding: 10px 20px;
+	border: none;
+	border-radius: 5px;
+	background-color: #dc3545;
+	color: white;
+	cursor: pointer;
+	transition: background-color 0.2s, color 0.2s;
+}
+.deleteButton:disabled {
+	background-color: #cccccc;
+	color: #666666;
+	cursor: not-allowed;
+}
+
+.deleteButton:hover {
+	background-color: #c82333;
+	color: #fff;
+}
+
+.header {
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	padding: 10px 20px;
+	background-color: #ebebf9;
+	border-radius: 50px;
+	box-shadow: -10px 4px 20px rgba(0, 255, 247, 0.5),
+		10px -5px 40px rgba(213, 24, 194, 0.63);
+	opacity: 0.95;
+	font-size: 25px;
+}
+
+.header-left,
+.header-right {
+	display: flex;
+	align-items: center;
+}
+
+.header-right{
+	font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+}
+
+.header-button {
+	margin-right: 10px;
+	padding: 5px 10px;
+	text-decoration: none;
+	color: #000000;
+	border: 2px solid #000000;
+	border-radius: 5px;
+	background-color: rgb(255, 246, 254);
+	transition: background-color 0.2s, color 0.2s;
+	box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+	opacity: 1;
+}
+
+.header-button:hover {
+	background-color: #f200ff;
+	color: white;
+}
+.editLink {
+	font-size: 25px;
+	color: rgba(126, 17, 84);
+	text-shadow:
+        -1px -1px 0 #fffbfb,
+         1px -1px 0 #ffffff,
+        -1px  1px 0 #fffbfb,
+         1px  1px 0 #ffffff;
+}
+.editLink:visited {
+	color: rgb(180, 72, 104);
+	text-shadow:
+        -1px -1px 0 #000,
+         1px -1px 0 #000,
+        -1px  1px 0 #000,
+         1px  1px 0 #000;
+}
+.editLink:hover:visited {
+	color: rgb(255, 102, 148);
+}
+.edit-link-container {
+    text-align: center;
+
+}
+.detLink {
+	color: rgba(126, 17, 84);
+	font-size: 20px;
+	font-weight: 400;
+}
+.detLink:visited {
+	color: rgb(180, 72, 104);
+}
+.detLink:hover:visited {
+	color: white;
+}
+
+.linkToButton {
+	margin-right: 10px;
+	padding: 5px 10px;
+	text-decoration: none;
+	color: #000000;
+	border: 2px solid #000000;
+	border-radius: 5px;
+	background-color: #ebebf9;
+	transition: background-color 0.2s, color 0.2s;
+	box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+.linkToButton:hover {
+	background-color: #f200ff;
+	color: white;
+}
+
+.detailsContainer {
+	font-size: 28px;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: center;
+	min-height: 100vh;
+	text-align: center;
+	padding: 20px;
+
+}
+
+
+.dets {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: auto auto;
+    gap: 20px;
+    align-items: start;
+    margin: 50px auto;
+    width: 100%;
+    max-width: 600px;
+    background-color: rgb(255, 246, 254);
+    opacity: 0.9;
+    border-radius: 10px;
+    box-shadow: -10px 4px 50px rgba(0, 255, 247, 0.5), 10px -4px 50px rgba(213, 24, 194, 0.472);
+    text-align: center;
+}
+
+.dets label {
+	margin-top: 20px;
+    font-size: 24px;
+    font-weight: bold;
+    margin-bottom: 10px;
+	color: #555;
+}
+
+.dets p {
+	font-size: 20px;
+	margin-bottom: 15px;
+}
+.detailsDesc {
+	font-size: 25px;
+	font-weight: bold;
+	color: #333;
+	margin: 5px 0;
+}
+
+.deleteButton {
+	align-self: center;
+	margin-top: 20px;
+}
+
+.error-message {
+	color: red;
+	margin: 5px 0;
+	font-size: 15px;
+}

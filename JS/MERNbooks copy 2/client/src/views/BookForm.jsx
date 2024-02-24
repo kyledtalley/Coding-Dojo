@@ -176,9 +176,7 @@ const BookForm = () => {
 						Frontend Error: {formErrors.title}
 					</p>
 				)}
-				{/* {errors.validationErrors && (
-					<p>{errors.validationErrors.title}</p>
-				)} */}
+
 				<label className="label" htmlFor="author">
 					Author
 				</label>
