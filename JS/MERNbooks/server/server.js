@@ -2,14 +2,18 @@ import express from 'express';
 import cors from 'cors';
 import dotenv from 'dotenv';
 import dbConnect from './config/mongoose.config.js';
-import router from './routes/book.routes.js'
 import { createBook, getAllBooks, getOneBook, updateOneBook, deleteOneBook } from './controllers/book.controller.js';
 const app = express();
 app.use(express.json(), cors());
-app.use('/api', router)
 dotenv.config();
 const PORT = process.env.PORT;
 dbConnect();
+
+app.get('/books', getAllBooks);
+app.get('/books/:id', getOneBook);
+app.post('/books', createBook);
+app.put('/books/:id', updateOneBook);
+app.delete('/books/:id', deleteOneBook);
 
 
 

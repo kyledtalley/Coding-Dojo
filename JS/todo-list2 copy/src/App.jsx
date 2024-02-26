@@ -1,38 +1,29 @@
-import React, { useReducer } from "react"
-import List from "./components/List"
-import Form from "./components/Form"
-import "./App.css"
-
-// Initial state for the application
-const initialState = []
-
-// Reducer function to handle state updates based on actions
-function reducer(state, action) {
-	switch (action.type) {
-		case "addItem":
-			return [...state, action.payload]
-		case "deleteItem":
-			return state.filter((_, index) => index !== action.payload)
-		case "toggleItem":
-			return state.map((item, index) =>
-				index === action.payload
-					? { ...item, completed: !item.completed }
-					: item
-			)
-		default:
-			throw new Error("Unhandled action type: " + action.type)
-	}
-}
+import React, {useState} from 'react'
+import List from './components/List'
+import Form from './components/Form'
+import './App.css'
 
 const App = () => {
-	const [state, dispatch] = useReducer(reducer, initialState)
 
-	return (
-		<div className="app-container">
-			<Form dispatch={dispatch} />
-			<List items={state} dispatch={dispatch} />
-		</div>
-	)
+  const [liftedState, setLiftedState] = useState([])
+
+  const addItem = (newItem) => {
+    setLiftedState(prevLiftedState => [...prevLiftedState, newItem]);
+  }
+
+  const deleteItem = (index) => {
+    setLiftedState(liftedState.filter((item, idx) => idx !== index));
+};
+
+  const updateItem = (updatedItems) => {
+    setLiftedState(updatedItems);
+  }
+
+  return (
+    <div className="app-container">
+      <Form stateUpdater={addItem}/>
+      <List updateState={updateItem} liftedState={liftedState} deleteItem={deleteItem}/>
+    </div>
+  )
 }
-
 export default App
